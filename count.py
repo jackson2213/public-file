@@ -31,6 +31,6 @@ def count_company():
         neg_ratio = round(value['neg']/(value['pos']+value['neg']+value['neu']),2)
         neu_ratio = round(value['neu']/(value['pos']+value['neg']+value['neu']),2)
         result.append([key, pos_ratio, neg_ratio,neu_ratio])
-    df = pd.DataFrame(output, columns = ['company', 'pos_ratio', 'neg_ratio', 'neu_ratio'])  # convert list to dataframe
+    df = pd.DataFrame(result, columns = ['company', 'pos_ratio', 'neg_ratio', 'neu_ratio'])  # convert list to dataframe
     df.to_csv('sensitivity_analyze_by_company.csv')  # save the result to a csv file
     print('task finished!')
