@@ -26,7 +26,7 @@ def count_company():
             else:
                count_company[company]['neu'] += 1
     for key, value in count_company.items():
-        # key value is company
+        # key is company
         pos_ratio = round(value['pos']/(value['pos']+value['neg']+value['neu']),2)
         neg_ratio = round(value['neg']/(value['pos']+value['neg']+value['neu']),2)
         neu_ratio = round(value['neu']/(value['pos']+value['neg']+value['neu']),2)
