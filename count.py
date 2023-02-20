@@ -34,3 +34,8 @@ def count_company():
     df = pd.DataFrame(result, columns = ['company', 'pos_ratio', 'neg_ratio', 'neu_ratio'])  # convert list to dataframe
     df.to_csv('sensitivity_analyze_by_company.csv')  # save the result to a csv file
     print('task finished!')
+    
+if __name__=='__main__':
+     print("start process.....")
+     count_company()
+     print("task finish.")
