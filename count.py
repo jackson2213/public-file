@@ -1,3 +1,14 @@
+#function input value is read from analyze result company and new added colume
+#example:
+'''
+company sensitivity
+google  pos
+intel   neu
+google  pos
+google  neu
+intel   neg
+'''
+
 def count_company():
     articles = pd.read_csv('tweets_3.csv',index_col=['company', 'sensitivity'], low_memory=False)
     count_company = {}
