@@ -1,4 +1,4 @@
-#function input value is read from analyze result company and new added colume
+#function input value is read from analyze_result.csv company and sensitivity colume
 #example:
 '''
 company sensitivity
